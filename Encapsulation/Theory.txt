@@ -1,0 +1,14 @@
+Encapsulation in C++ is defined as the wrapping up of data and infomation in a single unit.
+In Object-Oriented Programming, Encapsulation is defined as binding together the data and the functions that manipulate them.
+
+Two Important property of Encapsulation:
+1. Data protection
+2. Infomation Hiding.
+
+Features of Encapsulation:
+1. We can not access any function from the class directly. We need an object to access that function that is using the
+member variables of that class.
+2. The function which we are making inside the class must use only member variables, only then it is called encapsulation.
+3. If we don't make a function inside the class which is using the member variable of the class then we don't call it encapsulation.
+4. Increase in the security of data.
+5. It helps to control the modification of our data member.

@@ -1,0 +1,19 @@
+Data abstraction is one of the most essential and important features of object-oriented programming in C++.
+Abstraction means displaying only essential information and hiding the details.
+
+Types of Abstraction:
+1. Data abstraction
+2. Control abstraction
+
+- Abstraction using classes: A class can decide which data member will be visible to the outside world and which is not.
+
+- Abstraction in Header files: 
+
+- Abstraction using Access Specifiers: public and private.
+
+Advantage of Data Abstraction
+1. Helps the user to avoid writing the low-level code
+2. Avoid code duplication and increases reusability
+3. Can change the internal implementtation of the class independently without affecting the user.
+4. Helps to increase the sercurity of an application or program as only important details are provided to the user.
+5. It reduces the complexity as well as the redundancy of the code, therefore increasing the readability.

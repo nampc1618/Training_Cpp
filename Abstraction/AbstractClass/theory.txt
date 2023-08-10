@@ -1,0 +1,23 @@
+- In C++ programming there is no built-in concept of interface
+- In order to create an inteface, we need to create an abstract class which is having only pure virtual methods.
+- In C++, Interface are also called pure abstract class.
+
+Pure Virtual Function
+
+- A Pure Virtual Function is a function where we only declare the function but not the function definition.
+- The implementation for pure virtual methods is done at the derived class by methods/function overriding.
+
+Abstract Class 
+
+- An Abstract Class is a class that is specially designed to be used as a base class.
+- Abstract Class must have at least one pure virtual function.
+- It may have variables and normal functions.
+- The derived classes of an abstract class must implement all the pure virtual function of their base class
+or else they become abstract as well.
+
+Interface
+
+- Declare only pure virtual functions
+- For pure virtual function assign only 0
+- Cannot create an instance of the class
+- We can create a pointer to the instance of the derived class with a reference of a base abstract class.

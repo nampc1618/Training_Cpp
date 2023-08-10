@@ -1,0 +1,12 @@
+Polymorphism means having many forms.
+In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form.
+
+For example: the same person exhibits different behavior in different situations.
+
+Type of Polymorphism:
+1. Compile-time Polymorphism
+    A. Function Overloading
+    B. Operator Overloading
+2. Runtime Polymorphism
+    A. Function Overriding
+    B. Virtual Function

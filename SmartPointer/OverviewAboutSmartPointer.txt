@@ -1,0 +1,37 @@
+    Pointers are used for accessing the resources which are external to the program - like heap memory.
+So, for accessing the heap memory (if anything is created inside heap memory), pointers are used.
+When accessing any external resource we just use a copy of the resource. If we make any changes to it,
+we just change it in the copied version. But, if we use a pointer to the resource, we'll be able to change
+the original resource.
+
+***PROBLEM WITH NORMAL POINTERS 
+    - Memory leak: This occurs when memory is repeatedlly allocated by a program but never freed. This leads to excessive
+    memory consumption and eventually leads to a system crash.
+    - Dangling Pointers: A dangling pointer is a pointer that occurs at the time when the object is de-allocated from memory
+    without modifying the value of the pointer.
+    - Wild Pointers: Wild pointers are pointer that are declared and allocated memory but the pointer is never initialized to pointer
+    to any valid object or address.
+    - Data inconsistency: Data inconsistency occurs when come data is stored in memory but is not updated in a consistent manner.
+    - Buffer Overflow: When a pointer is used to write data to a memory address that is outside of the allocated memory block.
+    This leads to the corruption of data which can be exploited my malicious attackers.
+
+    SMART POINTERS
+        As we've known unconsciously not deallocating a pointer causes a memory leak that may lead to a crash of the program.
+    Languages Java, C# has Garbage Collection Mechanisms to smartly deallocate unused memory to be used again. The programmer doesn't
+    have to worry about any memory leaks. C++ comes up with its own mechanism that's Smart Pointer. When the object is destroyed it frees
+    the memory as well. So, we don't need to delete it as Smart Pointer does will handle it.
+
+    A Smart Pointer is a wrapper class over a pointer with an operator like * and -> overloaded. The object of the smart pointer class
+    look like normal pointers. But, unlike Normal Pointers it can deallocate and free destroyed object memory.
+
+    The idea is to take a class with a pointer, destructor, and overload operators like * and ->. Since the destructor is automatically
+    called when an object goes out of scope, the dynamically allocated memory would automatically be deleted.
+
+    *Note: Smart Pointer are also useful in the management of resources, such as file handles or network sockets.
+
+    TYPES OF SMART POINTERS
+        C++ libraries provide implementation of smart pointers in the following types:
+        1. auto_ptr (This is template is deprecated as of C++ 11 and removed in C++ 17, replaced by unique_ptr with improved security)
+        2. unique_ptr
+        3. shared_ptr
+        4. weak_ptr
